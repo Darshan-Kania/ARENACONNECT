@@ -25,14 +25,7 @@
 
 - ArenaConnect aims to be a centralized platform for gamers and gaming organizations, addressing the challenges of fragmented data access and inefficient event management in the gaming industry. The project focuses on:
 
-- Real-Time Data Integration:
-  Building a system to consolidate and display user statistics, rankings, and gameplay metrics from multiple popular games such as Call of Duty, Clash of Clans, Chess.com, FIFA, and PUBG.
-
-- Event Management System:
-  Developing tools for organizations to announce public and private events while enabling users to discover, track, and participate in these events.
-
-- User-Centric Design:
-  Providing an intuitive interface to enhance user experience by offering seamless navigation, gaming profile management, and community engagement.
+-  Building a system to consolidate and display user statistics, rankings, and gameplay metrics from multiple popular games such as Call of Duty, Clash of Clans, Chess.com, FIFA, and PUBG.
 
 - ArenaConnect is designed to streamline the gaming ecosystem, making it easier for gamers and organizations to connect, engage, and grow through real-time data insights and event participation.
 
@@ -61,7 +54,7 @@
    - **Event Notifications**: Send notifications to users about upcoming events or changes to events they are registered for.
 
 4. **Community and Interaction Features**
-
+   - Implementing using Discord.
    - **Social Features**: Allow users to follow other gamers, send friend requests, and share their achievements.
    - **Discussion Boards/Forums**: Provide a space for players to discuss games, events, and strategies.
    - **Live Chat/Message System**: Allow users to communicate with each other within the platform.
