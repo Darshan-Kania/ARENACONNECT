@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Profile Dashboard</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body style="background-color: black;">
+
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="color: rgb(188, 237, 255);"> <h2>ArenaConnect</h2></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Events</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Background Image and Content Section -->
+    <div class="container-fluid  text-light p-5 bg-gaming">
+        <div class="row g-4">
+            <!-- Profile Card -->
+            <div class="col-md-12">
+                <div class="card text-light  rounded-4 p-3" style="background-color: rgb(26, 25, 25);">
+                    <div class="text-center">
+                        <img src="https://via.placeholder.com/100" alt="Avatar"
+                            class="rounded-circle mb-3 border border-3">
+                        <h4>Darshan Kania</h4>
+                        <p class="text-info">@ProGamer2604</p>
+                        <button class="btn btn-outline btn-sm mb-2">Edit Profile</button>
+                    </div>
+                    <hr>
+                    <p><i class="fas fa-university me-2"></i> Dharmasinh Desai University</p>
+                    <p><i class="fas fa-envelope me-2"></i> darshan.gamer@mail.com</p>
+                    <p><i class="fas fa-medal me-2"></i> Rank: Elite</p>
+                </div>
+            </div>
+
+            <!-- Overall Stats -->
+            <div class="col-md-">
+                <div class="row g-3">
+                    <!-- Game Stat Cards -->
+                    <div class="col-md-2">
+                        <div class="card p-3 bg-gradient text-center game-card">
+                            <img class="logo" src="Chess.webp" alt="">
+                            <h5>Chess</h5>
+                            <p class="text-info">ELO: 2100</p>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card p-3 bg-gradient text-center game-card">
+                            <img class="logo" src="COD.webp" alt="">
+                            <h5>Call of Duty</h5>
+                            <p class="text-info">Kills: 5000</p>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card p-3 bg-gradient text-center game-card">
+                            <img class="logo" src="FIFA.webp" alt="">
+                            <h5>FIFA</h5>
+                            <p class="text-info">Matches Won: 120</p>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card p-3 bg-gradient text-center game-card">
+                            <img class="logo" src="COC.webp" alt="">
+                            <h5>Clash of Clans</h5>
+                            <p class="text-info">Trophies: 3500</p>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card p-3 bg-gradient text-center game-card">
+                            <img class="logo" src="Valorant.webp" alt="">
+                            <h5>Valorant</h5>
+                            <p class="text-info">Rank: Diamond</p>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card p-3 bg-gradient text-center game-card">
+                            <img class="logo" src="PUBG.webp" alt="">
+                            <h5>PUBG</h5>
+                            <p class="text-info">Chicken Dinners: 70</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Game Progress Section -->
+        <div class="mt-5">
+            <h3 class="text-center mb-4">Game Progress Overview</h3>
+            <div class="card p-3 bg-secondary">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>Clash of Clans <span class="float-end">70%</span></p>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <p>Call of Duty <span class="float-end">85%</span></p>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-3">
+                        <p>FIFA <span class="float-end">60%</span></p>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-3">
+                        <p>Chess <span class="float-end">75%</span></p>
+                        <div class="progress">
+                            <div class="progress-bar bg-info" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

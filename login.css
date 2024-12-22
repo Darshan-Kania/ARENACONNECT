@@ -1,0 +1,144 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    /* background: url('https://www.transparenttextures.com/patterns/space-odyssey.png'); */
+    background-color: black;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-container {
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    max-width: 550px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    text-align: left;
+    color: white;
+    border: 2px solid #6e7bff;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #6e7bff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    text-align: center;
+
+}
+
+label {
+    display: block;
+    margin: 2px 0 5px;
+    font-size: 16px;
+    color: #fff;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0 20px;
+    border-radius: 5px;
+    border: 1px solid #555;
+    background-color: #333;
+    color: white;
+    font-size: 14px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #6e7bff;
+}
+
+button.btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #6e7bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+button.btn:hover {
+    background-color: #5b6ee6;
+}
+
+button.btn:focus {
+    outline: none;
+}
+
+p.login-link {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #ddd;
+    text-align: center;
+}
+
+p.login-link a {
+    text-decoration: none;
+    color: #6e7bff;
+    font-weight: bold;
+}
+
+p.login-link a:hover {
+    text-decoration: underline;
+}
+
+footer.footer {
+    background-color: black;
+    color: #ddd;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-icon {
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+    transition: transform 0.3s ease;
+    border-radius: 20px;
+}
+
+.footer-icon:hover {
+    transform: scale(1.2);
+}
+
+@media (max-width: 600px) {
+    .form-container {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    input {
+        font-size: 12px;
+    }
+
+    button.btn {
+        font-size: 14px;
+    }
+}

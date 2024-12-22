@@ -1,0 +1,67 @@
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Background for gaming */
+.bg-gaming {
+    background-image: url('Back.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.navbar {
+    z-index: 9999;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #f8f9fa;
+    padding: 10px 15px;
+    font-size: 16px;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    background-color: #6c757d;
+    border-radius: 5px;
+}
+
+/* Game Cards */
+.game-card {
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    background: linear-gradient(145deg, #2b2b2b, #1c1c1c);
+}
+
+.game-card:hover {
+    transform: scale(1.05);
+    background: linear-gradient(145deg, #3a3a3a, #2a2a2a);
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.progress {
+    height: 8px;
+    border-radius: 5px;
+}
+
+/* Navbar styling */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+h1,
+h3 {
+    color: #28a745;
+}
+
+.text-info {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
