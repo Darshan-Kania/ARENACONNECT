@@ -1,99 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Organizer Profile - ArenaConnect</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body style="background-color: black; color: white;">
-
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body style="background-color: black; color: white">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">ArenaConnect</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">My Events</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Profile</a></li>
-                </ul>
-            </div>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">ArenaConnect</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="homepage.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a id="myEventsNavLink" class="nav-link" href="#">My Events</a>
+            </li>
+            <!-- <li class="nav-item"><a class="nav-link" href="profile.html">Profile</a></li> -->
+          </ul>
         </div>
+      </div>
     </nav>
 
     <!-- Profile Section -->
     <div class="container text-center mt-5">
-        <h2>Welcome, Organizer Name</h2>
-        <p>Email: organizer@example.com</p>
-        <p>Organization: Gaming Association</p>
+      <h2>Welcome, Organizer Name</h2>
+      <p>Email: organizer@example.com</p>
+      <p>Organization: Gaming Association</p>
     </div>
 
     <!-- Event Management Section -->
     <div class="container mt-5">
-        <h3>Manage Your Events</h3>
-        <div class="row mb-3">
-            <div class="col-md-6">
-                <button id="createEventBtn" class="btn btn-primary w-100">Create New Event</button>
-            </div>
-            <div class="col-md-6">
-                <button id="viewPastEventsBtn" class="btn btn-success w-100">View Past Events</button>
-            </div>
+      <h3>Manage Your Events</h3>
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <button id="createEventBtn" class="btn btn-primary w-100">
+            Create New Event
+          </button>
         </div>
+        <div class="col-md-6">
+          <button id="viewPastEventsBtn" class="btn btn-success w-100">
+            View Past Events
+          </button>
+        </div>
+      </div>
 
-        <!-- Create Event Form -->
-        <div id="createEventForm" class="d-none">
-            <h4>Create Event</h4>
-            <form>
-                <div class="mb-3">
-                    <label for="eventName" class="form-label">Event Name</label>
-                    <input type="text" id="eventName" class="form-control" placeholder="Enter event name">
-                </div>
-                <div class="mb-3">
-                    <label for="eventDate" class="form-label">Event Date</label>
-                    <input type="date" id="eventDate" class="form-control">
-                </div>
-                <div class="mb-3">
-                    <label for="eventDescription" class="form-label">Event Description</label>
-                    <textarea id="eventDescription" class="form-control" rows="3" placeholder="Enter event description"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-        </div>
+      <!-- Create Event Form -->
+      <div id="createEventForm" class="d-none">
+        <h4>Create Event</h4>
+        <form>
+          <div class="mb-3">
+            <label for="eventName" class="form-label">Event Name</label>
+            <input
+              type="text"
+              id="eventName"
+              class="form-control"
+              placeholder="Enter event name"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="eventDate" class="form-label">Event Date</label>
+            <input type="date" id="eventDate" class="form-control" />
+          </div>
+          <div class="mb-3">
+            <label for="eventDescription" class="form-label"
+              >Event Description</label
+            >
+            <textarea
+              id="eventDescription"
+              class="form-control"
+              rows="3"
+              placeholder="Enter event description"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
 
-        <!-- Past Events List -->
-        <div id="pastEventsList" class="d-none">
-            <h4>Past Events</h4>
-            <ul class="list-group">
-                <li class="list-group-item">Event 1 - FIFA Championship (01 Jan 2024)</li>
-                <li class="list-group-item">Event 2 - Valorant Showdown (15 Feb 2024)</li>
-                <li class="list-group-item">Event 3 - Chess Masters League (20 Mar 2024)</li>
-                <li class="list-group-item">Event 4 - PUBG Invitational (10 Apr 2024)</li>
-            </ul>
-        </div>
+      <!-- Past Events List -->
+      <div id="pastEventsList" class="d-none">
+        <h4>Past Events</h4>
+        <ul class="list-group">
+          <li class="list-group-item">
+            Event 1 - FIFA Championship (01 Jan 2024)
+          </li>
+          <li class="list-group-item">
+            Event 2 - Valorant Showdown (15 Feb 2024)
+          </li>
+          <li class="list-group-item">
+            Event 3 - Chess Masters League (20 Mar 2024)
+          </li>
+          <li class="list-group-item">
+            Event 4 - PUBG Invitational (10 Apr 2024)
+          </li>
+        </ul>
+      </div>
     </div>
 
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const createEventBtn = document.getElementById("createEventBtn");
-            const viewPastEventsBtn = document.getElementById("viewPastEventsBtn");
-            const createEventForm = document.getElementById("createEventForm");
-            const pastEventsList = document.getElementById("pastEventsList");
+      document.addEventListener("DOMContentLoaded", function () {
+        const createEventBtn = document.getElementById("createEventBtn");
+        const viewPastEventsBtn = document.getElementById("viewPastEventsBtn");
+        const createEventForm = document.getElementById("createEventForm");
+        const pastEventsList = document.getElementById("pastEventsList");
+        const myEventsNavLink = document.getElementById("myEventsNavLink");
 
-            createEventBtn.addEventListener("click", function () {
-                createEventForm.classList.remove("d-none");
-                pastEventsList.classList.add("d-none");
-            });
-
-            viewPastEventsBtn.addEventListener("click", function () {
-                pastEventsList.classList.remove("d-none");
-                createEventForm.classList.add("d-none");
-            });
+        createEventBtn.addEventListener("click", function () {
+          createEventForm.classList.remove("d-none");
+          pastEventsList.classList.add("d-none");
         });
-    </script>
 
-</body>
+        viewPastEventsBtn.addEventListener("click", function () {
+          pastEventsList.classList.remove("d-none");
+          createEventForm.classList.add("d-none");
+        });
+
+        // Handle the "My Events" navbar link
+        myEventsNavLink.addEventListener("click", function () {
+          pastEventsList.classList.remove("d-none");
+          createEventForm.classList.add("d-none");
+        });
+      });
+    </script>
+  </body>
 </html>
