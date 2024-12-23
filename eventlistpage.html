@@ -5,11 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contest Calendar</title>
     <style>
-         body {
+        ::-webkit-scrollbar{
+            display: none;
+        }
+        
+        body {
             font-family: 'Roboto', sans-serif;
             margin: 0;
-            background-color: #1e1e2f;
+            background-color: #424245;
             color: #f0f0f0;
+        }
+
+        nav {
+            background-color: #1f1f1f;
+            padding-left: 20px ;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+
+        nav .logo{
+            padding-top: 10px;
+        }
+
+        nav .logo img{
+            color: #e0e0e0;
+            font-size: 1.2rem;
+            font-weight: bold;
+            height: 50px;
+            width: 50px;
+            border-radius: 50px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            text-decoration: none;  
+            color: #e0e0e0;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #007bff;
         }
         .container {
             display: flex;
@@ -19,18 +68,18 @@
         }
         .upcoming {
             width: 30%;
-            background: linear-gradient(145deg, #29293d, #1c1c2e);
+            background: rgb(26, 26, 26);
             border-radius: 10px;
             box-shadow: 4px 4px 8px #131319, -4px -4px 8px #2d2d43;
             padding: 20px;
         }
         .upcoming h2 {
-            color: #e0e0ff;
+            color: #f8f8fa;
             text-align: center;
             margin-bottom: 20px;
         }
         .event {
-            background-color: #2b2b40;
+            background-color: #2c2c2d;
             padding: 15px;
             border-radius: 10px;
             margin-bottom: 15px;
@@ -39,41 +88,41 @@
         .event h4 {
             margin: 0 0 5px;
             font-size: 16px;
-            color: #a0a0ff;
+            color: #f1f1f5;
         }
         .event p {
             margin: 0;
             font-size: 14px;
-            color: #d0d0ff;
+            color: #f6f6f9;
         }
         .calendar {
             width: 70%;
-            background: linear-gradient(145deg, #29293d, #1c1c2e);
+            background: rgb(26, 26, 26);
             border-radius: 10px;
             box-shadow: 4px 4px 8px #131319, -4px -4px 8px #2d2d43;
             padding: 20px;
         }
         .calendar h2 {
             text-align: center;
-            color: #e0e0ff;
+            color: #f6f6f9;
             margin-bottom: 20px;
         }
         table {
             width: 100%;
             border-collapse: collapse;
-            background-color: #2b2b40;
+            background-color: #2c2c30;
             border-radius: 10px;
             overflow: hidden;
         }
         th, td {
             padding: 15px;
-            border: 1px solid #3e3e5c;
+            border: 1px solid #030303;
             text-align: center;
             vertical-align: top;
             color: #f0f0f0;
         }
         th {
-            background-color: #3e3e5c;
+            background-color: #303033;
             font-size: 14px;
         }
         .day {
@@ -93,7 +142,7 @@
         }
         .event-item {
             font-size: 12px;
-            background-color: #414167;
+            background-color: #27272a;
             margin-bottom: 5px;
             padding: 5px;
             border-radius: 5px;
@@ -110,6 +159,17 @@
     </style>
 </head>
 <body>
+    <nav>
+        <div class="logo">
+            <a href="homepage.html"><img src="Logo.jpg" alt=""></a>
+        </div>
+        <ul>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="eventlistpage.html">Events</a></li>
+            <li><a href="eventregistrationpage.html">Events Register</a></li>
+        </ul>
+    </nav>
+
     <div class="container">
         <div class="upcoming">
             <h2>Upcoming Events</h2>
