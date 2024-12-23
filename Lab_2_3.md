@@ -44,3 +44,43 @@
    - **Share Content**: Promote streams, videos, and tutorials related to games or events.
    - **Engage Community**: Interact with followers via comments, posts, or live streams.
    - **Highlight Events**: Collaborate with organizers to feature specific tournaments.
+
+## Prototype ScreenShots
+
+- Home Page
+- ![Home Page](HomePage1.png)
+
+---
+
+- Login Page
+- ![Login Page](Login.png)
+
+---
+
+- Signup Page
+- ![Signup](SignUp.png)
+
+---
+
+- Profile Page
+- ![Profile](Profile.png)
+- ![Profile](Profile2.png)
+
+---
+
+- Organizer Create Event
+- ![Organizer Create Event](OrganizerCreate.png)
+
+---
+
+- Organizer Past Event
+- ![Organizer Past Event](OrganizerPast.png)
+
+---
+
+- Upcoming Events
+- ![Upcoming Event](EventList.png)
+
+---
+
+> END OF DOCUMENT
