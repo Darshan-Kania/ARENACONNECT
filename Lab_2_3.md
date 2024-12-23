@@ -83,4 +83,8 @@
 
 ---
 
+- User Event Registration 
+- ![User Event Registration](User_Event_Registration.png)
+---
+
 > END OF DOCUMENT
