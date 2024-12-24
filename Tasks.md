@@ -12,38 +12,38 @@
 
 ### FR
 
-- Profile Page of User
+- Profile Page of User (Darshan)
   - User Game Account Add
   - User Profile Details Update
   - User Game Account Update
   - User Game Account Delete
   - User Game Account Fetch
-- Signup Page
+- Signup Page (Hirav)
   - User Signup Data Authenticate
   - User Signup Data Insert
-- Login Page
+- Login Page (Manthan)
   - User Login Data Authenticate
-- Organization Page
+- Organization Page (Darshan)
   - Create Event
   - Past Event
   - Update Organization Details
   - Delete Organization
   - Update Event Details
   - Event Analytics
-- Admin Page
+- Admin Page (Hirav)
   - Manage user
   - Manage organization
   - Manage event
-- Event List
+- Event List (Manthan)
   - Event Details Fetch
   - Event Registration
   - Event Unregistration
   - Event Registration Details Update
-- Registration Page
+- Registration Page (Hirav)
   - User Registration Data Insert
   - User Registration Data Authenticate
 
-### NFR
+### NFR (Manthan)
 
 - Data Base
   - User Data Store
