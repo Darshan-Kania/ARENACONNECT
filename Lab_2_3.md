@@ -48,43 +48,43 @@
 ## Prototype ScreenShots
 
 - Home Page
-- ![Home Page](HomePage1.png)
+- ![Home Page](WebSiteProto/HomePage1.png)
 
 ---
 
 - Login Page
-- ![Login Page](Login.png)
+- ![Login Page](WebSiteProto/Login.png)
 
 ---
 
 - Signup Page
-- ![Signup](SignUp.png)
+- ![Signup](WebSiteProto/SignUp.png)
 
 ---
 
 - Profile Page
-- ![Profile](Profile.png)
-- ![Profile](Profile2.png)
+- ![Profile](WebSiteProto/Profile.png)
+- ![Profile](WebSiteProto/Profile2.png)
 
 ---
 
 - Organizer Create Event
-- ![Organizer Create Event](OrganizerCreate.png)
+- ![Organizer Create Event](WebSiteProto/OrganizerCreate.png)
 
 ---
 
 - Organizer Past Event
-- ![Organizer Past Event](OrganizerPast.png)
+- ![Organizer Past Event](WebSiteProto/OrganizerPast.png)
 
 ---
 
 - Upcoming Events
-- ![Upcoming Event](EventList.png)
+- ![Upcoming Event](WebSiteProto/EventList.png)
 
 ---
 
 - User Event Registration 
-- ![User Event Registration](User_Event_Registration.png)
+- ![User Event Registration](WebSiteProto/User_Event_Registration.png)
 ---
 
 > END OF DOCUMENT

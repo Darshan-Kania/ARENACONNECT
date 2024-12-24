@@ -1,9 +1,0 @@
-Home Page
-log in (Organization Name) 
-Sign Up
-User Profile Page
-Event List Page
-Event Registrations Page for User to Register 
-Edit Profile Page
-Oragnize Event Page for Organize User & Event Detail Page
-Organizer Profile Page
