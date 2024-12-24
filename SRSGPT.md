@@ -75,14 +75,36 @@ ArenaConnect integrates with third-party APIs for fetching real-time game data a
 
 #### **3. Functional Requirements**
 
-**FR-1**: Users can register, log in, and manage their profiles.  
-**FR-2**: Users can link gaming accounts to fetch stats.  
-**FR-3**: The system must fetch and display real-time gaming data.  
-**FR-4**: Organizers can create events with customizable rules and details.  
-**FR-5**: Users can discover, register for, and participate in events.  
-**FR-6**: Notifications must be sent for event updates and milestones.  
-**FR-7**: Admins can moderate events and manage user accounts.  
-**FR-8**: Analytics must provide insights on gaming performance and event engagement.
+- Profile Page of User (Darshan)
+  - User Game Account Add
+  - User Profile Details Update
+  - User Game Account Update
+  - User Game Account Delete
+  - User Game Account Fetch
+- Signup Page (Hirav)
+  - User Signup Data Authenticate
+  - User Signup Data Insert
+- Login Page (Manthan)
+  - User Login Data Authenticate
+- Organization Page (Darshan)
+  - Create Event
+  - Past Event
+  - Update Organization Details
+  - Delete Organization
+  - Update Event Details
+  - Event Analytics
+- Admin Page (Hirav)
+  - Manage user
+  - Manage organization
+  - Manage event
+- Event List (Manthan)
+  - Event Details Fetch
+  - Event Registration
+  - Event Unregistration
+  - Event Registration Details Update
+- Registration Page (Hirav)
+  - User Registration Data Insert
+  - User Registration Data Authenticate
 
 ---
 
@@ -121,4 +143,3 @@ ArenaConnect integrates with third-party APIs for fetching real-time game data a
 - **B**: References for third-party APIs and documentation.
 
 ---
-
