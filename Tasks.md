@@ -43,9 +43,9 @@
   - User Registration Data Insert
   - User Registration Data Authenticate
 
-### NFR (Manthan)
+### NFR
 
-- Data Base
+- Data Base (Manthan and Hirav)
   - User Data Store
   - Organization Data Store
   - Event Data Store
