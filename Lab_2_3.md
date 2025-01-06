@@ -40,11 +40,6 @@
    - **Analyze Data**: Monitor user engagement, event participation, and community growth.
    - **Promote New Games**: Showcase upcoming game releases, updates, or promotions.
 
-4. Content Creators and Influencers
-   - **Share Content**: Promote streams, videos, and tutorials related to games or events.
-   - **Engage Community**: Interact with followers via comments, posts, or live streams.
-   - **Highlight Events**: Collaborate with organizers to feature specific tournaments.
-
 ## Prototype ScreenShots
 
 - Home Page
@@ -83,8 +78,9 @@
 
 ---
 
-- User Event Registration 
+- User Event Registration
 - ![User Event Registration](WebSiteProto/User_Event_Registration.png)
+
 ---
 
 > END OF DOCUMENT
