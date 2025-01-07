@@ -23,6 +23,7 @@
 
 >>    **Output:**
     >> - Display a list of events with details such as event name, date, time, and location.
+    >> - Clicking on an event should display more detailed information about the event.
 
 #### R.2.2 Event Registration
 >>    **Description:**
@@ -30,7 +31,7 @@
 
 >>    **Input:**
     >> - Event ID
-    >> - User ID
+    >> - User ID / Username / Email
 
 >>    **Output:**
     >> - Successful registration: Display a confirmation message and update the event registration data store.
@@ -42,7 +43,7 @@
 
 >>    **Input:**
     >> - Event ID
-    >> - User ID
+    >> - User ID / Username / Email
 
 >>    **Output:**
     >> - Successful unregistration: Display a confirmation message and update the event registration data store.
@@ -54,7 +55,7 @@
 
 >>    **Input:**
     >> - Event ID
-    >> - User ID
+    >> - User ID / Username / Email
     >> - Updated registration details
 
 >>    **Output:**
