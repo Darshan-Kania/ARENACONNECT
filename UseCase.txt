@@ -1,0 +1,211 @@
+1. Profile Management
+Use Case 1: Create/Update Player Profile
+
+Actors: Player
+Preconditions:
+User provides valid input data (username, email, preferences).
+Steps:
+Player enters profile details.
+System validates input and stores data in the database.
+Associate data with a unique user ID.
+Confirm profile creation/update.
+Postconditions:
+Profile is stored and accessible.
+Exceptions:
+Invalid input results in an error message.
+
+
+Use Case 2: Fetch Real-Time Player Stats
+
+Actors: Player
+Preconditions:
+Valid player profile exists.
+Steps:
+Player requests real-time stats via an API.
+System queries external game APIs and aggregates data.
+Stats (rankings, achievements, progress) are displayed.
+Postconditions:
+Stats are presented on the player dashboard.
+Exceptions:
+API failure triggers a notification.
+
+
+2. Gaming Insights
+Use Case 3: Consolidate Gaming Data into Dashboard
+
+Actors: Player
+Preconditions:
+Supported games are linked to the player profile.
+Steps:
+System sends API requests to multiple platforms.
+Fetch and standardize data.
+Display consolidated stats.
+Postconditions:
+Aggregated stats are shown in real-time.
+Exceptions:
+Incompatible API responses flagged for troubleshooting.
+
+Use Case 4: View Leaderboards
+
+Actors: Player
+Preconditions:
+Leaderboard data is available.
+Steps:
+Player selects leaderboard filters (e.g., global, friends-only).
+System queries and applies filters.
+Display relevant leaderboard data.
+Postconditions:
+Leaderboards are displayed based on filters.
+Exceptions:
+No data available for selected filters triggers an error message.
+
+3. Event Participation
+
+Use Case 5: Register for Events
+
+Actors: Player
+Preconditions:
+Event registration is open.
+Steps:
+Player selects an event and submits registration details.
+System validates input and adds the player to the participant list.
+Confirmation of successful registration is sent.
+Postconditions:
+Player is added to the event roster.
+Exceptions:
+Registration closes during submission.
+
+Use Case 6: Event Notifications
+
+Actors: Player
+Preconditions:
+Player is registered for the event.
+Steps:
+Event updates trigger notifications.
+System generates and sends alerts to players.
+Postconditions:
+Player is informed of updates.
+Exceptions:
+Notification delivery failure.
+
+4. Organizer Functional Requirements
+Use Case 7: Create Public/Private Events
+
+Actors: Organizer
+Preconditions:
+Organizer is authenticated.
+Steps:
+Organizer enters event details (name, date, rules).
+System validates and stores event information.
+Event is listed based on visibility settings.
+Postconditions:
+Event is listed for eligible users.
+Exceptions:
+Duplicate/conflicting event details flagged.
+
+Use Case 8: Event Participation Insights
+
+Actors: Organizer
+Preconditions:
+Event is active or completed.
+Steps:
+Organizer requests event analytics.
+System aggregates data and generates insights.
+Insights are presented in a dashboard.
+Postconditions:
+Analytics are available for review.
+Exceptions:
+Insufficient participation data limits insights.
+
+Use Case 9: Moderate User Interactions
+
+Actors: Organizer
+Preconditions:
+Event is ongoing.
+Steps:
+User reports inappropriate behavior.
+Organizer reviews reports and takes action (e.g., warnings, bans).
+Resolution status is updated.
+Postconditions:
+User behavior is moderated.
+Exceptions:
+Delayed actions due to insufficient evidence.
+
+5. Admin Functional Requirements
+Use Case 10: Manage User Accounts
+
+Actors: Admin
+Preconditions:
+Valid reports or system flags exist.
+Steps:
+Admin reviews flagged cases.
+Apply appropriate actions (e.g., ban, suspension).
+Notify users about actions taken.
+Postconditions:
+User accounts are managed to maintain platform integrity.
+Exceptions:
+Appeals or challenges to admin actions.
+
+Use Case 11: Generate Platform-Wide Analytics
+
+Actors: Admin
+Preconditions:
+System data is up-to-date.
+Steps:
+Admin requests analytics.
+System aggregates platform activity data.
+Reports with key metrics are generated.
+Postconditions:
+Analytics are accessible.
+Exceptions:
+Data discrepancies affect report accuracy.
+
+
+
+
+Code
+@startuml
+actor Organizer
+usecase "Create Public/Private Events" as CreateEvents
+usecase "Event Participation Insights" as EventInsights
+usecase "Moderate User Interactions" as ModerateUsers
+
+Organizer --> CreateEvents
+Organizer --> EventInsights
+Organizer --> ModerateUsers
+@enduml
+
+@startuml
+actor Player
+usecase "Create/Update Player Profile" as CUProfile
+usecase "Fetch Real-Time Player Stats" as FetchStats
+
+Player --> CUProfile
+Player --> FetchStats
+
+
+actor Player
+usecase "Consolidate Gaming Data into Dashboard" as ConsolidateData
+usecase "View Leaderboards" as ViewLeaders
+
+Player --> ConsolidateData
+Player --> ViewLeaders
+
+
+actor Player
+usecase "Register for Events" as RegisterEvent
+usecase "Event Notifications" as EventNotify
+
+Player --> RegisterEvent
+Player --> EventNotify
+@enduml
+
+@startuml
+
+actor Admin
+usecase "Manage User Accounts" as ManageAccounts
+usecase "Generate Platform-Wide Analytics" as GenerateAnalytics
+
+Admin --> ManageAccounts
+Admin --> GenerateAnalytics
+@enduml
