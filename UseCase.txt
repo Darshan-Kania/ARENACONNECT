@@ -209,3 +209,125 @@ usecase "Generate Platform-Wide Analytics" as GenerateAnalytics
 Admin --> ManageAccounts
 Admin --> GenerateAnalytics
 @enduml
+
+
+
+
+Updated Code
+
+
+@startuml
+left to right direction
+
+actor Player
+actor Organizer
+actor Admin
+
+package "Profile Management" {
+    usecase "Create/Update Player Profile" as U1
+    usecase "Fetch Real-Time Player Stats" as U2
+}
+
+package "Gaming Insights" {
+    usecase "Consolidate Gaming Data into Dashboard" as U3
+    usecase "View Leaderboards" as U4
+}
+
+package "Event Participation" {
+    usecase "Register for Events" as U5
+    usecase "Event Notifications" as U6
+}
+
+package "Organizer Functionalities" {
+    usecase "Create Public/Private Events" as U7
+    usecase "Event Participation Insights" as U8
+    usecase "Moderate User Interactions" as U9
+}
+
+package "Admin Functionalities" {
+    usecase "Manage User Accounts" as U10
+    usecase "Generate Platform-Wide Analytics" as U11
+    usecase "Monitor System Logs" as U12
+    usecase "Configure Platform Settings" as U13
+}
+
+Player --> U1
+Player --> U2
+Player --> U3
+Player --> U4
+Player --> U5
+Player --> U6
+
+Organizer --> U7
+Organizer --> U8
+Organizer --> U9
+
+Admin --> U10
+Admin --> U11
+Admin --> U12
+Admin --> U13
+
+U5 --> U8 : Extends
+U6 --> U8 : Extends
+U3 --> U4 : Includes
+@enduml
+
+
+
+
+Final one
+@startuml
+left to right direction
+
+actor Player
+actor Organizer
+actor Admin
+
+package "Profile Management" {
+    usecase "Create/Update Player Profile" as U1
+    usecase "Fetch Real-Time Player Stats" as U2
+}
+
+package "Gaming Insights" {
+    usecase "Consolidate Gaming Data into Dashboard" as U3
+    usecase "View Leaderboards" as U4
+}
+
+package "Event Participation" {
+    usecase "Register for Events" as U5
+    usecase "Event Notifications" as U6
+}
+
+package "Organizer Functionalities" {
+    usecase "Create Public/Private Events" as U7
+    usecase "Event Participation Insights" as U8
+    usecase "Moderate User Interactions" as U9
+}
+
+package "Admin Functionalities" {
+    usecase "Manage User Accounts" as U10
+    usecase "Generate Platform-Wide Analytics" as U11
+    usecase "Monitor System Logs" as U12
+    usecase "Configure Platform Settings" as U13
+}
+
+Player --> U1
+Player --> U2
+Player --> U3
+Player --> U4
+Player --> U5
+Player --> U6
+
+Organizer --> U7
+Organizer --> U8
+Organizer --> U9
+
+Admin --> U10
+Admin --> U11
+Admin --> U12
+Admin --> U13
+
+U5 --> U8 : Extends
+U6 --> U8 : Extends
+U3 --> U4 : Includes
+@enduml
