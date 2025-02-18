@@ -12,18 +12,18 @@
 > Use Case : Distribute Blood
 
 - ![](../Image/Case_Study_2_Distribute%20Blood%20to%20Hospitals_SEQUENCE_DIAGRAM.png)
-- ![](../Image/Case_Study_2_Distribute%20Blood%20to%20Hospitals_SEQUENCE_DIAGRAM.png)
+- ![](../Image/Case_Study_2_Distribute%20Blood%20to%20Hospitals_ACTIVITY_DIAGRAM.png)
 
 ### Case Study 3
 
 > Use Case : Appointment Scheduling and Management
 
-- ![](../Image/Use_Case_3_Sequence.png)
-- ![](../Image/Use_Case_3_Activity.png)
+- ![](../Image/Case_Study_3_Appointment_Scheduling_and_Management_Sequence.png)
+- ![](../Image/Case_Study_3_Appointment_Scheduling_and_Management_Activity.png)
 
 ### Case Study 4
 
 > Use Case : Get Result
 
-- ![](../Image/Use_Case_4_Sequence.png)
-- ![](../Image/Use_Case_4_Activity.png)
+- ![](../Image/Case_Study_4_Course_Marks_Processing_Sequence.png)
+- ![](../Image/Case_Study_4_Course_Marks_Processing_Activity.png)
